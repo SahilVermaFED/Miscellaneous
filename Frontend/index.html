@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GET & POST Requests</title>
+  </head>
+  <body>
+    <!-- GET
+        => Use to GET some response
+        => Data senfd in query strings 
+           (limited, strig data & visible in url)
+    -->
+    <h3>Get request below</h3>
+    <form action="http://localhost:5000/register" method="get">
+      <input placeholder="Enter your name" type="text" name="user" />
+      <input
+        placeholder="Enter your password"
+        type="password"
+        name="password"
+      />
+      <button type="submit">Submit</button>
+    </form>
+    <hr />
+    <!-- Post 
+        => Used to POST something (for Create/ Write/ Update) 
+        => Data send via request bodu(any type of data)
+    -->
+    <h3>Post request down below</h3>
+    <form action="http://localhost:5000/register" method="post">
+      <input placeholder="Enter your email" type="email" name="email" />
+      <input
+        placeholder="Enter your password"
+        type="password"
+        name="password"
+      />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
